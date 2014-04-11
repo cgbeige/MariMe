@@ -1,7 +1,7 @@
 MariMe by Dave Girard
 =====================
 
-A set of Python script for Maya and Mari to send and receive textured meshes
+A set of Python scripts for Maya and Mari to send and receive textured meshes
 
 To view the various workflows and usage, just watch the Mari Me videos on my blog: http://polygonspixelsandpaint.tumblr.com/tagged/marime
 
