@@ -1,4 +1,4 @@
-##Mari Me Pro by Dave Girard daveg@can-con.ca
+##Mari Me 1.1 by Dave Girard daveg@can-con.ca
 ##To run, install this script to Maya scripts folder and enter these lines in the Python command line (requires that the Mari mariMeBridge.py script is install on the Mari side):
 ##import mariMe
 ##mariMe 
@@ -892,7 +892,7 @@ def mariMe(*args):
 		cmds.loadPlugin( 'objExport')
 	if cmds.window('mariMewindow', query=True,exists=True):
 		cmds.deleteUI('mariMewindow',window=True)
-	mariMewindow = cmds.window('mariMewindow', widthHeight=(400, 320), menuBar=True, title="Mari Me Pro", rtf=1)
+	mariMewindow = cmds.window('mariMewindow', widthHeight=(400, 320), menuBar=True, title="Mari Me", rtf=1)
 
 	cmds.columnLayout(adjustableColumn=True, columnAttach=('both', 10), rowSpacing=5)
 	cmds.separator( height=8, style='none' )
