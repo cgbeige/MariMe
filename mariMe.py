@@ -896,7 +896,7 @@ def mariMe(*args):
 
 	cmds.columnLayout(adjustableColumn=True, columnAttach=('both', 10), rowSpacing=5)
 	cmds.separator( height=8, style='none' )
-	cmds.text(label='MAKE SURE TO ENABLE MARI COMMAND PORT 6100\nAND NO MATERIALS ARE MAYA LAMBERTS')
+	cmds.text(label='MAKE SURE TO ENABLE MARI COMMAND PORT 6100\nAND SENT MESHES AREN\'T USING MAYA LAMBERTS')
 	cmds.separator( height=4, style='none' )
 	cmds.rowColumnLayout( numberOfColumns=4, columnWidth=[(1, 80), (2, 100), (3, 100), (4, 20)] )
 	cmds.text(label='Scene name:')
