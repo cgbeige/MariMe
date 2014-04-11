@@ -17,3 +17,5 @@ evalDeferred("commandPort -name \":7100\" -sourceType \"python\";");
 To view the various workflows and usage of the scripts, just watch the Mari Me videos on my blog: http://polygonspixelsandpaint.tumblr.com/tagged/marime
 
 When you send meshes from Maya to Mari with Mari Me, the script tags your materials in Maya and uses that as an identifier in Mari. Avoid using Lambert materials. There is a bug in Maya that doesn't correctly ID these for whatever reason. Any other material type is fine. Auto-tiled materials for V-Ray look bad in viewport 2 for Maya <2015 but render fine. 
+
+If you want to have a bunch of new channel template settings for The standard V-Ray Material, replace the [AddNewChannel] text within your Mari.ini file with the text in the AddNewChannel-VRayMtl.txt file. DON'T REPLACE THE WHOLE FILE - COPY AND PASTE THE TEXT INTO THE RELEVANT SPOT. This will add a bunch of V-Ray Mtl specific presets to your new channel settings in Mari.
