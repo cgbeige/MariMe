@@ -1,0 +1,7 @@
+Notes for people who are looking at using the code for their own scripts:
+
+You might have noticed that there are a bunch of different loops in the script that seem redundant and, while I'm sure that it could be cleaned up a bit, there is a big reason for this: you can't make an empty scene in Mari, so the first piece of geometry needs to be sent to create the scene and anything extra has to be sent in a separate loop to load additional geo. So keep that in mind when navigating the script. Anything on the Maya side can be done in one loop but then you have to figure out how to split that into something Mari can get in two parts for new scenes. I've already asked the Mari devs if there is a way to create an empty scene in Mari and there isn't for technical reasons so that's why I load a dummy piece of geometry to delete after everything is done. 
+
+The other thing to keep in mind is that you have to send "\x04" to Mari to have it actually execute code that it receives over the socket. If you run this after every line, it messes up as soon as you hit indents, so you need to put your commands into the list that is then made into a bunch of strings separated by newlines (\n) and then put the exec "\x04" at the end when you send it over the socket from Maya to Mari. Maya is less finicky about queuing stuff so you don't need to do it this way. You can just send it a ton of separate commands over the socket instead of all at once.
+
+Anyway, good luck – you haven't experienced tedious debugging until you've sent code through a socket to a another program.
