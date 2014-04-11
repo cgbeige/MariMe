@@ -1,5 +1,5 @@
-MariMe by Dave Girard
-=====================
+Mari Me by Dave Girard
+======================
 
 A set of Python scripts for Maya and Mari to send and receive textured meshes
 
