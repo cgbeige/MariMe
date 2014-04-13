@@ -10,7 +10,6 @@ import socket
 import pymel.core as pm
 import re
 import maya.api.OpenMaya as om2
-#from datetime import datetime
 import random
 import time
 
