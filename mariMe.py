@@ -1,4 +1,4 @@
-##Mari Me 1.1 by Dave Girard daveg@can-con.ca
+##Mari Me 2 by Dave Girard daveg@can-con.ca
 ##To run, install this script to Maya scripts folder and enter these lines in the Python command line (requires that the Mari mariMeBridge.py script is install on the Mari side):
 ##import mariMe
 ##mariMe 
